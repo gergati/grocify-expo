@@ -10,14 +10,14 @@ export const listGroceyItems = async () => {
 
 export const createGroceryItem = async (input: {
     name: string,
-    categoy: string,
+    category: string,
     quantity: number,
     priority: string
 }) => {
     const rows = await db.insert(groceryItems).values({
         id: crypto.randomUUID(),
         name: input.name,
-        category: input.categoy,
+        category: input.category,
         quantity: Math.max(1, input.quantity),
         purchased: false,
         priority: input.priority,

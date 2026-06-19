@@ -3,7 +3,7 @@ import { Image } from 'expo-image'
 import React from 'react'
 import { Pressable, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import useSocialAuth from '../hooks/useSocialAuth'
+import useSocialAuth from '../../hooks/useSocialAuth'
 
 export default function SignInScreen() {
     const { handleSocialAuth, loadingStrategy } = useSocialAuth();

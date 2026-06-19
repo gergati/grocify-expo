@@ -15,7 +15,7 @@ export default function TabsLayout() {
     }
 
     if (!isSignedIn) {
-        return <Redirect href="/(auth)/sign-in" />
+        return <Redirect href="/sign-in" />
     }
 
     return (
