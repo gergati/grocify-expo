@@ -13,14 +13,14 @@ export default function ListScreen() {
 
     return (
         <FlatList
-            className='flex-1 bg-background'
+            className='flex-1 bg-background mt-10'
             data={pendingItems}
             keyExtractor={item => item.id}
             renderItem={({ item }) => <PendingItemCard item={item} />}
             contentContainerStyle={{ padding: 20, gap: 14 }}
             contentInsetAdjustmentBehavior='automatic'
             ListHeaderComponent={
-                <View style={{ gap: 14 }}>
+                <View style={{ gap: 14, paddingTop: 20 }}>
                     <TabScreenBakground />
                     <ListHeroCard />
                     <View className='flex-row items-center justify-between px-1'>
