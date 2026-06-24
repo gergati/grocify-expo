@@ -9,9 +9,9 @@ const priorityPillBg = {
 };
 
 const priorityPillText = {
-    low: 'bg-priority-low-foreground',
-    medium: 'bg-priority-medium-foreground',
-    high: 'bg-priority-high-foreground',
+    low: 'text-priority-low-foreground',
+    medium: 'text-priority-medium-foreground',
+    high: 'text-priority-high-foreground',
 }
 
 const PendingItemCard = ({ item }: { item: GroceryItem }) => {
